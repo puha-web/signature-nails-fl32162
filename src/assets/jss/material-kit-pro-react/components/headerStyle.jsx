@@ -53,7 +53,8 @@ const headerStyle = theme => ({
     "&,& a": {
       ...defaultFont,
       lineHeight: "30px",
-      fontSize: "18px",
+      fontSize: "25px",
+      fontWeight: "bold",
       borderRadius: "3px",
       textTransform: "none",
       whiteSpace: "nowrap",
