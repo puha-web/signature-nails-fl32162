@@ -166,7 +166,7 @@ class SectionContacts extends React.Component {
                             <br /> Monday - Saturday
                             <br /> 9:00am-06:00pm
                             <br /> Sunday
-                            <br /> 9:00am-06:00pm
+                            <br /> Closed
 
 
                           </span>

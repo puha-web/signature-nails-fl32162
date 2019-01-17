@@ -1,4 +1,4 @@
-import { cardTitle } from "assets/jss/material-kit-pro-react.jsx";
+import { cardTitle, title } from "assets/jss/material-kit-pro-react.jsx";
 
 import tooltipsStyle from "assets/jss/material-kit-pro-react/tooltipsStyle.jsx";
 
@@ -7,13 +7,13 @@ const sectionPillsStyle = {
   section: {
     backgroundPosition: "50%",
     backgroundSize: "cover",
-    padding: "70px 0"
+    padding: "0"
   },
   textCenter: {
     textAlign: "center"
   },
   category: {
-    color: "rgba(255, 255, 255, 0.7) !important",
+    color: "#FFFFFF !important",
     marginTop: "10px"
   },
   cardTitle: {
@@ -33,6 +33,13 @@ const sectionPillsStyle = {
   },
   tabSpace: {
     padding: "20px 0 50px"
+  },
+  titleSpecial: {
+    ...title,
+    marginBottom: "1rem",
+    marginTop: "30px",
+    minHeight: "32px",
+    textDecoration: "none"
   }
 };
 

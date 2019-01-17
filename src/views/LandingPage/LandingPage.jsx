@@ -21,7 +21,8 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPag
 // Sections for this page
 import About from "./Sections/SectionAbout.jsx";
 import Services from "./Sections/SectionServices.jsx";
-import Contact from "./Sections/SectionContacts.jsx";
+import OpenHrs from "./Sections/SectionHours.jsx";
+import Specials from "./Sections/SectionSpecials.jsx";
 // import SectionDescription from "./Sections/SectionDescription.jsx";
 
 
@@ -51,24 +52,36 @@ class LandingPage extends React.Component {
         />
         <Parallax image={require("assets/img/salon/bg1.jpg")} filter="dark" small>
           <div className={classes.container}>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={8}>
+            <GridContainer justify="center">
+              <GridItem 
+              xs={12}
+              sm={8}
+              md={8}
+              className={`${classes.mlAuto} ${classes.mrAuto} ${
+                classes.textCenter
+                }`}
+              >
                 <h2 className={classes.title}>We Bring Beauty & Happiness to Your Life</h2>
                 <br />
                 <Button
-                  color="warning"
-                  size="lg"
+                  round
+                  color="primary"
+                  size="md"
                   href="tel:3213104761"
                   rel="noopener noreferrer"
+                  className={classes.pullRight}
                 >
                   <i className="fas fa-phone fa-rotate-90" />CAll US
                 </Button>
                 <Button
+                  round
                   color="primary"
-                  size="lg"
+                  size="md"
                   href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className={classes.pullRight}
+
                 >
                   <i class="fas fa-directions"/>Directions
                 </Button>
@@ -81,7 +94,10 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <About />
             <Services />
-            <Contact />
+            <Specials />
+            <br></br>
+            <OpenHrs />
+            <br></br>
           </div>
         </div>
         <Footer

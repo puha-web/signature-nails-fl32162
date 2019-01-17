@@ -38,23 +38,23 @@ class SectionTeam extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.section}>
-          <div className={classes.container}>
-            <GridContainer>
-              <GridItem
-                xs={12}
-                sm={8}
-                md={8}
-                className={`${classes.mlAuto} ${classes.mrAuto} ${
-                  classes.textCenter
-                  }`}
-              >
-                <h2 className={classes.title}>We Offer</h2>
-                
-              </GridItem>
-            </GridContainer>
+        <div className={classes.container}>
+          <GridContainer>
+            <GridItem
+              xs={12}
+              sm={8}
+              md={8}
+              className={`${classes.mlAuto} ${classes.mrAuto} ${
+                classes.textCenter
+                }`}
+            >
+              <h2 className={classes.title}>We Offer</h2>
+
+            </GridItem>
+          </GridContainer>
 
           <GridContainer>
-          <GridItem xs={12} sm={3} md={3}>
+            <GridItem xs={12} sm={3} md={3}>
               <Card plain profile>
                 <CardHeader image plain>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -71,7 +71,7 @@ class SectionTeam extends React.Component {
                 <CardBody plain>
                   <h4 className={classes.cardTitle}>Manicures</h4>
                 </CardBody>
-                
+
               </Card>
             </GridItem>
 
@@ -92,7 +92,7 @@ class SectionTeam extends React.Component {
                 <CardBody plain>
                   <h4 className={classes.cardTitle}>Pedicures</h4>
                 </CardBody>
-                
+
               </Card>
             </GridItem>
 
@@ -113,7 +113,7 @@ class SectionTeam extends React.Component {
                 <CardBody plain>
                   <h4 className={classes.cardTitle}>Waxing</h4>
                 </CardBody>
-                
+
               </Card>
             </GridItem>
 
@@ -134,14 +134,26 @@ class SectionTeam extends React.Component {
                 <CardBody plain>
                   <h4 className={classes.cardTitle}>Kids' Services</h4>
                 </CardBody>
-                
+
               </Card>
             </GridItem>
-            
-            
+
+            {/* <GridItem xs={12} sm={12} md={12} className={classes.teamCenter}>
+              <Button
+                round
+                color="primary"
+                size="lg"
+                href="/services"
+                rel="noopener noreferrer"
+              >
+                <i className="far fa-eye" />View All Services
+              </Button>
+            </GridItem> */}
+
+
           </GridContainer>
 
-            {/* <GridContainer>
+          {/* <GridContainer>
               <GridItem xs={12} sm={3} md={3}>
 
                 <Card profile plain>
@@ -209,8 +221,8 @@ class SectionTeam extends React.Component {
               
              
             </GridContainer> */}
-          </div>
         </div>
+      </div>
 
     );
   }
