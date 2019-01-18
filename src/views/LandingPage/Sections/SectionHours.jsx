@@ -53,7 +53,7 @@ class SectionContacts extends React.Component {
                 <Card className={classes.card1}>
                   <CardHeader
                     contact
-                    color="primary"
+                    color="success"
                     className={classes.textCenter}
                   >
                     <h4 className={classes.cardTitle}>Business Hours</h4>
@@ -70,7 +70,7 @@ class SectionContacts extends React.Component {
                             </h5>
                           }
                           icon={OpenHrs}
-                          iconColor="primary"
+                          iconColor="success"
                         />
                       </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
@@ -83,7 +83,7 @@ class SectionContacts extends React.Component {
                             </h5>
                           }
                           icon={ClosedHrs}
-                          iconColor="primary"
+                          iconColor="success"
                         />
                       </GridItem>
                     </GridContainer>
@@ -109,8 +109,8 @@ class SectionContacts extends React.Component {
                       <br></br>
                       <Button
                         round
-                        color="primary"
-                        size="md"
+                        color="success"
+                        size="sm"
                         href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -138,8 +138,8 @@ class SectionContacts extends React.Component {
                       <br></br>
                       <Button
                         round
-                        color="primary"
-                        size="md"
+                        color="success"
+                        size="sm"
                         href="tel:3213104761"
                         rel="noopener noreferrer"
                       >

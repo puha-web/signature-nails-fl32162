@@ -200,7 +200,7 @@ class SectionContacts extends React.Component {
               <CardFooter className={classes.justifyContentBetween}>
                   <GridItem xs={12} sm={12} md={12}>
                     <Button
-                      color="warning"
+                      color="success"
                       size="md"
                       href="tel:3213104761"
                       rel="noopener noreferrer"
@@ -209,7 +209,7 @@ class SectionContacts extends React.Component {
                       <i className="fas fa-phone fa-rotate-90" />CAll US
                     </Button>
                     <Button
-                      color="primary"
+                      color="success"
                       size="md"
                       href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
                       target="_blank"

@@ -19,17 +19,13 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 // Sections for this page
-import About from "./Sections/SectionAbout.jsx";
-import Services from "./Sections/SectionServices.jsx";
-import OpenHrs from "./Sections/SectionHours.jsx";
 import Specials from "./Sections/SectionSpecials.jsx";
-// import SectionDescription from "./Sections/SectionDescription.jsx";
 
 
 
 // const dashboardRoutes = [];
 
-class LandingPage extends React.Component {
+class GiftCard extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -63,28 +59,7 @@ class LandingPage extends React.Component {
               >
                 <h2 className={classes.title}>We Bring Beauty & Happiness to Your Life</h2>
                 <br />
-                <Button
-                  round
-                  color="success"
-                  size="lg"
-                  href="tel:3213104761"
-                  rel="noopener noreferrer"
-                  className={classes.pullRight}
-                >
-                  <i className="fas fa-phone fa-rotate-90" />CAll US
-                </Button>
-                <Button
-                  round
-                  color="success"
-                  size="lg"
-                  href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={classes.pullRight}
 
-                >
-                  <i className="fas fa-directions"/>Directions
-                </Button>
               </GridItem>
               
             </GridContainer>
@@ -92,11 +67,7 @@ class LandingPage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <About />
-            <Services />
             <Specials />
-            <br></br>
-            <OpenHrs />
             <br></br>
           </div>
         </div>
@@ -135,4 +106,4 @@ class LandingPage extends React.Component {
   }
 }
 
-export default withStyles(landingPageStyle)(LandingPage);
+export default withStyles(landingPageStyle)(GiftCard);

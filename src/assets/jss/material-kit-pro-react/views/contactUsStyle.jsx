@@ -15,7 +15,7 @@ const contactUsStyle = {
   description,
   container: {
     ...container,
-    maxWidth: "970px !important"
+    maxWidth: "1200px !important"
   },
   contactContent: {
     paddingBottom: "40px",
