@@ -56,7 +56,7 @@ class SectionTeam extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={3} md={3}>
               <Card plain profile>
-                <CardHeader image plain>
+                <CardHeader image>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
                     <img src={Manicure1} alt="..." />
                   </a>
@@ -67,17 +67,35 @@ class SectionTeam extends React.Component {
                       opacity: "1"
                     }}
                   />
+                  <div className={classes.imgCardOverlay}>
+                    <h4
+                      className={classes.cardTitle}
+                      style={{
+                        backgroundColor: 'white',
+                        opacity: '0.8',
+                        fontSize: '20px',
+                        color: 'black',
+                        position: 'absolute',
+                        margin: 'auto',
+                        left: 0, right: 0,
+                        bottom: '10px',
+                        padding: '5px'
+                      }}
+                    >
+                      Manicures
+                    </h4>
+                  </div>
                 </CardHeader>
-                <CardBody plain>
+                {/* <CardBody plain>
                   <h4 className={classes.cardTitle}>Manicures</h4>
-                </CardBody>
+                </CardBody> */}
 
               </Card>
             </GridItem>
 
             <GridItem xs={12} sm={3} md={3}>
               <Card plain profile>
-                <CardHeader image plain>
+                <CardHeader image>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
                     <img src={Pedicure} alt="..." />
                   </a>
@@ -88,17 +106,35 @@ class SectionTeam extends React.Component {
                       opacity: "1"
                     }}
                   />
+                  <div className={classes.imgCardOverlay}>
+                    <h4
+                      className={classes.cardTitle}
+                      style={{
+                        backgroundColor: 'white',
+                        opacity: '0.8',
+                        fontSize: '20px',
+                        color: 'black',
+                        position: 'absolute',
+                        margin: 'auto',
+                        left: 0, right: 0,
+                        bottom: '10px',
+                        padding: '5px'
+                      }}
+                    >
+                      Pedicures
+                    </h4>
+                  </div>
                 </CardHeader>
-                <CardBody plain>
+                {/* <CardBody plain>
                   <h4 className={classes.cardTitle}>Pedicures</h4>
-                </CardBody>
+                </CardBody> */}
 
               </Card>
             </GridItem>
 
             <GridItem xs={12} sm={3} md={3}>
               <Card plain profile>
-                <CardHeader image plain>
+                <CardHeader image>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
                     <img src={Waxing} alt="..." />
                   </a>
@@ -109,17 +145,35 @@ class SectionTeam extends React.Component {
                       opacity: "1"
                     }}
                   />
+                  <div className={classes.imgCardOverlay}>
+                    <h4
+                      className={classes.cardTitle}
+                      style={{
+                        backgroundColor: 'white',
+                        opacity: '0.8',
+                        fontSize: '20px',
+                        color: 'black',
+                        position: 'absolute',
+                        margin: 'auto',
+                        left: 0, right: 0,
+                        bottom: '10px',
+                        padding: '5px'
+                      }}
+                    >
+                      Waxing
+                    </h4>
+                  </div>
                 </CardHeader>
-                <CardBody plain>
+                {/* <CardBody plain>
                   <h4 className={classes.cardTitle}>Waxing</h4>
-                </CardBody>
+                </CardBody> */}
 
               </Card>
             </GridItem>
 
             <GridItem xs={12} sm={3} md={3}>
               <Card plain profile>
-                <CardHeader image plain>
+                <CardHeader image>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
                     <img src={Manicure2} alt="..." />
                   </a>
@@ -130,10 +184,28 @@ class SectionTeam extends React.Component {
                       opacity: "1"
                     }}
                   />
+                  <div className={classes.imgCardOverlay}>
+                    <h4
+                      className={classes.cardTitle}
+                      style={{
+                        backgroundColor: 'white',
+                        opacity: '0.8',
+                        fontSize: '20px',
+                        color: 'black',
+                        position: 'absolute',
+                        margin: 'auto',
+                        left: 0, right: 0,
+                        bottom: '10px',
+                        padding: '5px'
+                      }}
+                    >
+                      Kids' Services
+                    </h4>
+                  </div>
                 </CardHeader>
-                <CardBody plain>
+                {/* <CardBody plain>
                   <h4 className={classes.cardTitle}>Kids' Services</h4>
-                </CardBody>
+                </CardBody> */}
 
               </Card>
             </GridItem>

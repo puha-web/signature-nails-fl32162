@@ -16,7 +16,7 @@ import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
-import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
+import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
 // Sections for this page
 import About from "./Sections/SectionAbout.jsx";
@@ -41,11 +41,15 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           // routes={dashboardRoutes}
-          brand="Signature Nails"
+          brand={
+            <h4
+              style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
+            >Signature Nails</h4>
+          }
           links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
           changeColorOnScroll={{
-            height: 300,
+            height: 50,
             color: "primary"
           }}
           // {...rest}
@@ -66,7 +70,7 @@ class LandingPage extends React.Component {
                 <Button
                   round
                   color="success"
-                  size="lg"
+                  size="sm"
                   href="tel:3213104761"
                   rel="noopener noreferrer"
                   className={classes.pullRight}
@@ -76,7 +80,7 @@ class LandingPage extends React.Component {
                 <Button
                   round
                   color="success"
-                  size="lg"
+                  size="sm"
                   href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
                   target="_blank"
                   rel="noopener noreferrer"

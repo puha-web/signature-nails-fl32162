@@ -21,7 +21,7 @@ const projectsSection = {
     textAlign: "center"
   },
   projects: {
-    padding: "80px 0"
+    padding: "0"
   },
   tabSpace: {
     padding: "20px 0 50px 0px"

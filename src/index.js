@@ -10,11 +10,7 @@ import Coupon from "views/Coupon/Coupon.jsx";
 import GiftCard from "views/GiftCard/GiftCard.jsx";
 import Promotion from "views/Promotion/Promotion.jsx";
 import Gallery from "views/Gallery/Gallery.jsx";
-
-
-
-
-
+import Services from 'views/Services/Services.jsx';
 
 import "assets/scss/material-kit-pro-react.css?v=1.2.0";
 
@@ -34,8 +30,7 @@ ReactDOM.render(
       <Route exact path='/gift-card' component={GiftCard} />
       <Route exact path='/promotion' component={Promotion} />
       <Route exact path='/gallery' component={Gallery} />
-
-
+      <Route exact path='/service' component={Services} />
 
     </Switch>
   </Router>,

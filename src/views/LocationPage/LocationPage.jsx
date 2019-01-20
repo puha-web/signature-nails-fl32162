@@ -79,8 +79,11 @@ class Location extends React.Component {
       >
         <Header
           color="primary"
-          brand="Signature Nails"
-          links={<HeaderLinks dropdownHoverColor="info" />}
+          brand={
+            <h4
+              style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
+            >Signature Nails</h4>
+          }          links={<HeaderLinks dropdownHoverColor="info" />}
           fixed
         />
         <div className={classes.bigMap}>
@@ -122,7 +125,7 @@ class Location extends React.Component {
                         description={
                           <Button
                             round
-                            color="default"
+                            color="success"
                             size="sm"
                             href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
                             target="_blank"
@@ -140,7 +143,7 @@ class Location extends React.Component {
                         description={
                           <Button
                             round
-                            color="default"
+                            color="success"
                             size="sm"
                             href="tel:3213104761"
                             rel="noopener noreferrer"
