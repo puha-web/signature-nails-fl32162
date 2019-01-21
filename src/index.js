@@ -19,9 +19,6 @@ ReactDOM.render(
   <Router history={hist}>
     
     <Switch>
-      {/* {indexRoutes.map((prop, key) => {
-        return <Route path={prop.path} key={key} component={prop.component} />;
-      })} */}
       <Route exact path='/' component={LandingPage} />
       <Route exact path='/about-us' component={LandingPage} />
       <Route exact path='/location' component={LocationPage} />
@@ -30,7 +27,6 @@ ReactDOM.render(
       <Route exact path='/promotion' component={Promotion} />
       <Route exact path='/gallery' component={Gallery} />
       <Route exact path='/service' component={Services} />
-
     </Switch>
   </Router>,
   document.getElementById("root")

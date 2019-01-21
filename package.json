@@ -50,7 +50,7 @@
     "eslint-plugin-react": "7.11.1",
     "prettier": "1.14.3"
   },
-  "homepage": "https://github-phungdpham.github.io/signature-nails-the-villages-32159",
+  "homepage": "https://github-phungdpham.github.io/signature-nails",
   "devDependencies": {
     "gh-pages": "^2.0.1"
   }
