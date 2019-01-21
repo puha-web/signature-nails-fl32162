@@ -1,20 +1,15 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
-import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-import office2 from "assets/img/examples/office2.jpg";
-import blog8 from "assets/img/examples/blog8.jpg";
-import cardProject6 from "assets/img/examples/card-project6.jpg";
 import ManiSpecial from "assets/img/salon/mani3-special.jpg";
 import PediSpecial from "assets/img/salon/pedi2-special.jpg";
 

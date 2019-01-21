@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router";
 
-import indexRoutes from "routes/index.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import LocationPage from "views/LocationPage/LocationPage.jsx";
 import Coupon from "views/Coupon/Coupon.jsx";

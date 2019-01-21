@@ -9,7 +9,6 @@ import OpenHrs from "@material-ui/icons/EventAvailable";
 import ClosedHrs from "@material-ui/icons/EventBusy";
 
 
-import Check from "@material-ui/icons/Check";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";

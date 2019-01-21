@@ -3,18 +3,12 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
-import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Muted from "components/Typography/Muted.jsx";
-import InfoArea from "components/InfoArea/InfoArea.jsx";
-import Badge from "components/Badge/Badge.jsx";
 
 import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.jsx";
 
@@ -46,7 +40,7 @@ function SectionProjects({ ...props }) {
                 }`}
             >
               <h2 className={classes.title}>
-                Our Works
+                Our Gallery
               </h2>
             </GridItem>
           </GridContainer>
@@ -105,26 +99,7 @@ function SectionProjects({ ...props }) {
                 </a>
               </Card>
             </GridItem>
-            {/* 
-        <GridItem
-          xs={12}
-          sm={8}
-          md={8}
-          className={`${classes.mlAuto} ${classes.mrAuto} ${
-            classes.textCenter
-            }`}
-        >
-          <Button
-            round
-            color="success"
-            size="md"
-            href="/services"
-            rel="noopener noreferrer"
-          // className={classes.pullRight}
-          >
-            <i className="far fa-eye" />View All Services
-              </Button>
-        </GridItem> */}
+    
 
           </GridContainer>
         </div>

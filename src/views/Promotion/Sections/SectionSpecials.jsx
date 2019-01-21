@@ -7,15 +7,10 @@ import FormatAlignLeft from "@material-ui/icons/FormatAlignLeft";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-import office2 from "assets/img/examples/office2.jpg";
-import blog8 from "assets/img/examples/blog8.jpg";
-import cardProject6 from "assets/img/examples/card-project6.jpg";
-import ManiSpecial from "assets/img/salon/mani3-special.jpg";
 import PediSpecial from "assets/img/salon/pedi2-special.jpg";
 
 
@@ -84,26 +79,7 @@ function SectionPills({ ...props }) {
             </CardBody>
           </Card>
         </GridItem>
-        {/* 
-        <GridItem
-          xs={12}
-          sm={8}
-          md={8}
-          className={`${classes.mlAuto} ${classes.mrAuto} ${
-            classes.textCenter
-            }`}
-        >
-          <Button
-            round
-            color="success"
-            size="md"
-            href="/services"
-            rel="noopener noreferrer"
-          // className={classes.pullRight}
-          >
-            <i className="far fa-eye" />View All Services
-              </Button>
-        </GridItem> */}
+      
 
       </GridContainer>
     </div>

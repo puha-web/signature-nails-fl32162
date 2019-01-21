@@ -6,7 +6,7 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -23,7 +23,6 @@ import About from "./Sections/SectionAbout.jsx";
 import Services from "./Sections/SectionServices.jsx";
 import OpenHrs from "./Sections/SectionHours.jsx";
 import Specials from "./Sections/SectionSpecials.jsx";
-// import SectionDescription from "./Sections/SectionDescription.jsx";
 
 
 

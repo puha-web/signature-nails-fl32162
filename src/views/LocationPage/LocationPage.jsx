@@ -9,7 +9,6 @@ import {
   Marker
 } from "react-google-maps";
 
-import Carousel from 'react-slick';
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -32,7 +31,6 @@ import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
-import carouselStyle from "assets/jss/material-kit-pro-react/views/componentsSections/carouselStyle.jsx";
 
 //Components
 import SalonPhoto from './ImageGallery.jsx';

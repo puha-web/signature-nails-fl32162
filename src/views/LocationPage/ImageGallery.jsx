@@ -4,8 +4,6 @@ import ImageGallery from "react-image-gallery";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 
 //Pictures
 import Salon1 from "assets/img/salon/salon1.JPEG";
