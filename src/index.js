@@ -16,7 +16,7 @@ import "assets/scss/material-kit-pro-react.css?v=1.2.0";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist} basename={process.env.PUBLIC_URL}>
+  <Router history={hist}>
     
     <Switch>
       {/* {indexRoutes.map((prop, key) => {
