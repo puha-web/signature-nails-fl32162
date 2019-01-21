@@ -829,7 +829,10 @@ class Services extends React.Component {
                   tabContent: (
                     // <GridContainer justify="center">
                     //   <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
-                    <Card>
+                    <Card style={{
+                      backgroundImage: `url(${ServiceBgImg})`,
+                    }}
+                    >
                       <CardBody>
                         {/* Start Kids' Services Section */}
                         <div id='kids-service-list'>
