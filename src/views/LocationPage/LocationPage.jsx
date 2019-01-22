@@ -159,6 +159,7 @@ class Location extends React.Component {
                 </GridItem>
                 
               </GridContainer>
+              <hr></hr>
               <SocialMedia />
             </div>
           </div>

@@ -31,7 +31,7 @@ class SectionContacts extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
-      <div className="cd-section" {...rest}>
+      <div className="cd-section" {...rest}  style={{ marginBottom: '50px'}}>
         {/* Contact us 1 START */}
         <div
           className={`${classes.contacts} ${classes.section}`}
@@ -157,8 +157,6 @@ class SectionContacts extends React.Component {
                 />
 
               </GridItem>
-
-
             </GridContainer>
           </div>
         </div>
