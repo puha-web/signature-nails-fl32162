@@ -196,96 +196,11 @@ class SectionTeam extends React.Component {
                     </h4>
                   </div>
                 </CardHeader>
-                {/* <CardBody plain>
-                  <h4 className={classes.cardTitle}>Kids' Services</h4>
-                </CardBody> */}
-
               </Card>
             </GridItem>
 
-            {/* <GridItem xs={12} sm={12} md={12} className={classes.teamCenter}>
-              <Button
-                round
-                color="primary"
-                size="lg"
-                href="/services"
-                rel="noopener noreferrer"
-              >
-                <i className="far fa-eye" />View All Services
-              </Button>
-            </GridItem> */}
-
-
           </GridContainer>
 
-          {/* <GridContainer>
-              <GridItem xs={12} sm={3} md={3}>
-
-                <Card profile plain>
-                  <CardAvatar profile plain>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={Manicure1} alt="..." className={classes.img} />
-                    </a>
-                    
-                  </CardAvatar>
-                  <CardBody>
-                    <h4 className={classes.cardTitle}>Manicures</h4>
-                  </CardBody>
-                  
-                </Card>
-
-              </GridItem>
-
-              <GridItem xs={12} sm={3} md={3}>
-
-                <Card profile plain>
-                  <CardAvatar profile plain>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={Manicure2} alt="..." className={classes.img} />
-                    </a>
-                  </CardAvatar>
-                  <CardBody>
-                    <h4 className={classes.cardTitle}>Pedicures</h4>
-                  </CardBody>
-                  
-                </Card>
-
-              </GridItem>
-
-              <GridItem xs={12} sm={3} md={3}>
-
-                <Card profile plain>
-                  <CardAvatar profile plain>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={Pedicure} alt="..." className={classes.img} />
-                    </a>
-                  </CardAvatar>
-                  <CardBody>
-                    <h4 className={classes.cardTitle}>Kids' Services</h4>
-                  </CardBody>
-                  
-                </Card>
-
-              </GridItem>
-
-              <GridItem xs={12} sm={3} md={3}>
-
-                <Card profile plain>
-                  <CardAvatar profile plain>
-                    <a href="#pablo" onClick={e => e.preventDefault()}>
-                      <img src={Waxing} alt="..." className={classes.img} />
-                    </a>
-                  </CardAvatar>
-                  <CardBody>
-                    <h4 className={classes.cardTitle}>Waxing</h4>
-                  </CardBody>
-                  
-                </Card>
-
-              </GridItem>
-              
-             
-            </GridContainer> */}
         </div>
       </div>
 

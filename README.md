@@ -1,6 +1,15 @@
-# Nail Signatures
+#  Web App Template
 
-* Location: 1078 Lake Sumter Landing, The Villages, Fl. 32162
-* Phone: (352) 259-2400
+## Overview
 
-* Customer: Brian Hoang
+* Description: Salon Website template for salon business owner
+
+## Customer Information
+
+### Salon Name: 
+
+* Location: 
+* Phone: 
+
+* Customer: 
+* Contact Number: 

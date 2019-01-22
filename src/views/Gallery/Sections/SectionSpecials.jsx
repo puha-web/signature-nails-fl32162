@@ -1,7 +1,6 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
 
 // core components
@@ -18,7 +17,6 @@ import Pic1 from "assets/img/salon/mani1.jpg";
 import Pic2 from "assets/img/salon/mani2.jpg";
 import Pic3 from "assets/img/salon/pedi1.jpg";
 import Pic4 from "assets/img/salon/pedi2-special.jpg";
-import Pic5 from "assets/img/salon/mani3-special.jpg";
 
 
 

@@ -12,28 +12,30 @@ import {
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
+
 // @material-ui/icons
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
 import Email from "@material-ui/icons/Email";
+import WalkIn from "@material-ui/icons/TagFaces";
+import CreditCard from "@material-ui/icons/CreditCard";
 
 // core components
-import Header from "components/Header/Header.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-import Footer from "components/Footer/Footer.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
 
+
 //Components
 import SalonPhoto from './ImageGallery.jsx';
+import ServiceBgImg from 'assets/img/salon/serviceBg-default.jpg';
+import SocialMedia from "../Components/SocialMedia.jsx";
+
 
 
 const CustomSkinMap = withScriptjs(
@@ -54,36 +56,16 @@ const CustomSkinMap = withScriptjs(
 
 class Location extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 5);
     document.body.scrollTop = 0;
   }
   render() {
 
     const { classes } = this.props;
 
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 1000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true
-    };
-
-    
-
-    return (
-      <div
-      >
-        <Header
-          color="primary"
-          brand={
-            <h4
-              style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
-            >Signature Nails</h4>
-          }          links={<HeaderLinks dropdownHoverColor="info" />}
-          fixed
-        />
+     return (
+      <div>
+        {/* <Header /> */}
         <div className={classes.bigMap}>
           <CustomSkinMap
             googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCAujiH1lsqv_cLpTQRZS9L6h4cNPcJ-s"
@@ -107,8 +89,7 @@ class Location extends React.Component {
               {/* <h2 className={classes.title}>Our Location</h2> */}
               <GridContainer>
                 <GridItem md={5} sm={5} className={classes}>
-
-                  <Card>
+                  <Card style={{ backgroundImage: `url(${ServiceBgImg})` }}>
                     <CardHeader
                       contact
                       color="success"
@@ -116,7 +97,7 @@ class Location extends React.Component {
                     >
                       <h4 className={classes.cardTitle}>Our Location</h4>
                     </CardHeader>
-                    7                    <CardBody>
+                    <CardBody>
                       <InfoArea
                         className={classes.info}
                         title="1078 Lake Sumter Landing, The Villages, FL 32162"
@@ -130,7 +111,7 @@ class Location extends React.Component {
                             rel="noopener noreferrer"
                           >
                             Directions
-                </Button>
+                        </Button>
                         }
                         icon={PinDrop}
                         iconColor="success"
@@ -147,7 +128,7 @@ class Location extends React.Component {
                             rel="noopener noreferrer"
                           >
                             CAll US
-                    </Button>
+                          </Button>
                         }
                         icon={Phone}
                         iconColor="success"
@@ -155,101 +136,33 @@ class Location extends React.Component {
                       <InfoArea
                         className={classes.info}
                         title="Signaturenails@gmail.com"
-                        // description={
-                        //   <Button
-                        //     round
-                        //     color="default"
-                        //     size="sm"
-                        //     href="tel:3213104761"
-                        //     rel="noopener noreferrer"
-                        //   >
-                        //     Email Us
-                        // </Button>
-                        // }
                         icon={Email}
+                        iconColor="success"
+                      />
+                      <InfoArea
+                        className={classes.info}
+                        title="Walks-In Welcome"
+                        icon={WalkIn}
+                        iconColor="success"
+                      />
+                      <InfoArea
+                        className={classes.info}
+                        title="We Accept Credit Cards"
+                        icon={CreditCard}
                         iconColor="success"
                       />
                     </CardBody>
                   </Card>
-
-
-
                 </GridItem>
                 <GridItem md={7} sm={7} className={classes.mlAuto}>
-                    {/* <Carousel {...settings}>
-                      <div>
-                        <img
-                          src={Salon1}
-                          alt="First slide"
-                          className="slick-image"
-                        />
-                       
-                      </div>
-                      <div>
-                        <img
-                          src={Salon2}
-                          alt="Second slide"
-                          className="slick-image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src={Salon3}
-                          alt="Third slide"
-                          className="slick-image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src={Salon4}
-                          alt="Third slide"
-                          className="slick-image"
-                        />
-                      </div>
-                      <div>
-                        <img
-                          src={Salon5}
-                          alt="Third slide"
-                          className="slick-image"
-                        />
-                      </div>
-                    </Carousel> */}
-                    <SalonPhoto />
+                  <SalonPhoto />
                 </GridItem>
+                
               </GridContainer>
+              <SocialMedia />
             </div>
           </div>
         </div>
-        <Footer
-          content={
-            <div>
-              <div className={classes.left}>
-                <List className={classes.list}>
-                  <ListItem className={classes.inlineBlock}>
-                    <Button justIcon round color="twitter">
-                      <i className="fab fa-twitter" />
-                    </Button>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <Button justIcon round color="facebook">
-                      <i className="fab fa-facebook-square" />
-                    </Button>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <Button justIcon round color="dribbble">
-                      <i className="fab fa-dribbble" />
-                    </Button>
-                  </ListItem>
-
-                </List>
-              </div>
-              <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made by{" "}
-                <a href="/">PUHA</a>
-              </div>
-            </div>
-          }
-        />
       </div>
     );
   }

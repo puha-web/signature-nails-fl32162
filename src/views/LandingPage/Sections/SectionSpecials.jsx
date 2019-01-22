@@ -83,17 +83,17 @@ function SectionPills({ ...props }) {
           className={`${classes.mlAuto} ${classes.mrAuto} ${
             classes.textCenter
             }`}
+            style={{ marginBottom: '50px'}}
         >
           <Button
             round
-            color="success"
-            size="md"
-            href="/services"
+            color="default"
+            size="sm"
+            href="/service"
             rel="noopener noreferrer"
           // className={classes.pullRight}
-          >
-            <i className="far fa-eye" />View All Services
-              </Button>
+          >View Our Services
+          </Button>
         </GridItem>
 
       </GridContainer>

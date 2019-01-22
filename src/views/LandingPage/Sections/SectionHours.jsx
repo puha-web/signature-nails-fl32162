@@ -7,7 +7,8 @@ import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
 import OpenHrs from "@material-ui/icons/EventAvailable";
 import ClosedHrs from "@material-ui/icons/EventBusy";
-
+import WalkIn from "@material-ui/icons/TagFaces";
+import CreditCard from "@material-ui/icons/CreditCard";
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -38,7 +39,7 @@ class SectionContacts extends React.Component {
         >
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
+              <GridItem xs={12} sm={5} md={5} className={classes.mlAuto} >
                 <Card className={classes.card1}>
                   <CardHeader
                     contact
@@ -72,6 +73,22 @@ class SectionContacts extends React.Component {
                             </h5>
                           }
                           icon={ClosedHrs}
+                          iconColor="success"
+                        />
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={12}>
+                        <InfoArea
+                          className={classes.infoArea2}
+                          title="Walks-In Welcome"
+                          icon={WalkIn}
+                          iconColor="success"
+                        />
+                      </GridItem>
+                      <GridItem xs={12} sm={12} md={12}>
+                        <InfoArea
+                          className={classes.infoArea2}
+                          title="We Accept Credit Cards"
+                          icon={CreditCard}
                           iconColor="success"
                         />
                       </GridItem>

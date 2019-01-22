@@ -1,23 +1,12 @@
 import React from "react";
 
-// nodejs library that concatenates classes
-import classNames from "classnames";
-
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
-
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
-import Close from "@material-ui/icons/Close";
-import Remove from "@material-ui/icons/Remove";
-import Add from "@material-ui/icons/Add";
-import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
-import { CardHeader } from "@material-ui/core";
-
 
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
