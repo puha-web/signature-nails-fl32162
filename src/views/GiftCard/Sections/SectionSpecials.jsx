@@ -37,7 +37,7 @@ function SectionPills({ ...props }) {
             classes.textCenter
             }`}
         >
-          <Button
+          {/* <Button
             round
             color="success"
             size="sm"
@@ -58,7 +58,7 @@ function SectionPills({ ...props }) {
 
           >
             <i className="fas fa-directions" />Directions
-                </Button>
+                </Button> */}
         </GridItem>
 
       </GridContainer>
