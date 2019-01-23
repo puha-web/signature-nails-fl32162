@@ -34,7 +34,6 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "react-scripts build",
-    "deploy": "aws s3 sync build/ s3://signature-nails",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
@@ -48,5 +47,8 @@
     "eslint-plugin-prettier": "2.6.2",
     "eslint-plugin-react": "7.11.1",
     "prettier": "1.14.3"
-  }
+  },
+  "homepage": "https://github.com/phungdpham/puhaweb",
+  "predeploy": "yarn run build",
+   "deploy": "gh-pages -d build"
 }
