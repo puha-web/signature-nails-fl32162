@@ -9,7 +9,10 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
+//Data
+import aboutData from '../../db/AboutUs';
 
+// page style
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
 
@@ -23,13 +26,13 @@ class Spotlight extends React.Component {
           <GridContainer justify="center">
             <GridItem
               xs={12}
-              sm={8}
-              md={8}
+              sm={10}
+              md={10}
               className={`${classes.mlAuto} ${classes.mrAuto} ${
                 classes.textCenter
                 }`}
             >
-              <h2 className={classes.title}>We Bring Beauty & Happiness to Your Life</h2>
+              <h2 className={classes.title}>{aboutData.slogan}</h2>
               <br />
               <Button
                 round

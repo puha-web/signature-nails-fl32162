@@ -20,11 +20,14 @@ import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
+// page style
 import contactsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle.jsx";
 
+//Images
 import SalonLocation from "assets/img/salon/bg-location.JPEG";
 
-
+//Data
+import aboutData from '../../../db/AboutUs';
 
 class SectionContacts extends React.Component {
 
@@ -53,10 +56,10 @@ class SectionContacts extends React.Component {
                       <GridItem xs={12} sm={12} md={12}>
                         <InfoArea
                           className={classes.infoArea2}
-                          title="Monday - Saturday"
+                          title={aboutData.busHrs.opening.dates}
                           description={
                             <h5>
-                              <strong>9:00am - 06:00pm</strong>
+                              <strong>{aboutData.busHrs.opening.time}</strong>
                             </h5>
                           }
                           icon={OpenHrs}
@@ -66,7 +69,7 @@ class SectionContacts extends React.Component {
                       <GridItem xs={12} sm={12} md={12}>
                         <InfoArea
                           className={classes.infoArea2}
-                          title="Sunday"
+                          title={aboutData.busHrs.closed.dates}
                           description={
                             <h5>
                               <strong>Closed</strong>
@@ -122,7 +125,7 @@ class SectionContacts extends React.Component {
                         rel="noopener noreferrer"
                         // className={classes.pullRight}
                       >
-                        Directions
+                        Get Directions
                     </Button>
                     </div>
                   }
