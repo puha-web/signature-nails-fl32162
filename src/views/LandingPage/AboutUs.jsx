@@ -12,7 +12,7 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsP
 
 // Sections for this page
 import About from "./Sections/SectionAbout.jsx";
-import Services from "./Sections/SectionServices.jsx";
+import Services from "./Sections/SectionWeOffer.jsx";
 import OpenHrs from "./Sections/SectionHours.jsx";
 import Specials from "./Sections/SectionSpecials.jsx";
 import SocialMedia from "../Components/SocialMedia.jsx";

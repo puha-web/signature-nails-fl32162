@@ -21,12 +21,30 @@ import cardsStyle from "assets/jss/material-kit-pro-react/views/componentsSectio
 
 import ServiceBgImg from 'assets/img/salon/serviceBg-default.jpg';
 
+//Data
+import services from '../../../db/Services';
+
+
 class Services extends React.Component {
+
+  state = {
+    group: [],
+    service: []
+  }
+
+  componentDidMount() {
+    const groups = services.map( group => group.category)
+    console.log(groups);
+
+    const groupsUnique = Array.from(new Set (groups));
+    console.log(groupsUnique);
+
+
+    this.setState({ group: groupsUnique })
+  }
 
   render() {
     const { classes } = this.props;
-
-
     return (
       <div className={classes.section}>
         <GridContainer justify="center"
@@ -44,8 +62,6 @@ class Services extends React.Component {
                 {
                   tabButton: "All",
                   tabContent: (
-                    // <GridContainer justify="center">
-                    //   <GridItem xs={12} sm={12} md={12} className={classes.textCenter}>
                     <Card style={{
                       backgroundImage: `url(${ServiceBgImg})`,
                     }}

@@ -17,7 +17,7 @@ class AboutUs extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.section} >
-      <GridContainer justify="center">
+        <GridContainer justify="center">
           <GridItem xs={12} sm={8} md={8}>
             <h2 className={classes.title}>About Us</h2>
             <h5 className={classes.description}>

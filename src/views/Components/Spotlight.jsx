@@ -19,9 +19,11 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsP
 class Spotlight extends React.Component {
   render() {
     const { classes } = this.props;
+    const phoneNum = 'tel:' + aboutData.phone;
+    console.log(phoneNum)
 
     return (
-      <Parallax image={require("assets/img/salon/bg1.jpg")} filter="dark" small>
+      <Parallax image={aboutData.coverPhoto} filter="dark" small>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem
@@ -38,9 +40,8 @@ class Spotlight extends React.Component {
                 round
                 color="success"
                 size="sm"
-                href="tel:3213104761"
+                href={phoneNum}
                 rel="noopener noreferrer"
-                className={classes.pullRight}
               >
                 <i className="fas fa-phone fa-rotate-90" />CAll US
             </Button>
@@ -51,7 +52,6 @@ class Spotlight extends React.Component {
                 href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={classes.pullRight}
 
               >
                 <i className="fas fa-directions" />Directions
