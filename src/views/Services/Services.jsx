@@ -13,7 +13,7 @@ import Spotlight from "../Components/Spotlight.jsx";
 
 
 // sections for this page
-import ServiceList from "./Sections/ServiceList";
+import ServiceList from "./Sections/ServiceList2";
 
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 import SocialMedia from "../Components/SocialMedia.jsx";
