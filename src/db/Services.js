@@ -113,7 +113,7 @@ const services = [
   {
     id: 16,
     service: 'Organic Pedicure',
-    category: 'Kids Services',
+    category: "Kids' Services",
     price: '26+',
     description: ''
   },
