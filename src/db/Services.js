@@ -106,7 +106,7 @@ const services = [
   {
     id: 15,
     service: 'Organic Manicure',
-    category: 'Kids Services',
+    category: "Kids' Services",
     price: '41+',
     description: ''
   },
@@ -120,7 +120,7 @@ const services = [
   {
     id: 17,
     service: 'Kids Organic Combo',
-    category: 'Kids Services',
+    category: "Kids' Services",
     price: '35+',
     description: ''
   },
