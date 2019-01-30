@@ -19,16 +19,21 @@ import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPost
 import SocialMedia from "../Components/SocialMedia.jsx";
 
 class Services extends React.Component {
+  
   componentDidMount() {
     window.scrollTo(0, 5);
     document.body.scrollTop = 0;
+
+    // const serviceDiv = document.getElementById('serviceDiv');
+    // serviceDiv.scrollIntoView(true);
+
   }
   render() {
     const { classes } = this.props;
     return (
       <div>
         <Spotlight />
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised)} id='serviceDiv'>
           <div className={classes.container}>
             <ServiceList />
             <SocialMedia />

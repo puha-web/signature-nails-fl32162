@@ -32,7 +32,6 @@ class GiftCard extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <Specials />
-            <hr></hr>
             <SocialMedia />
           </div>
         </div>

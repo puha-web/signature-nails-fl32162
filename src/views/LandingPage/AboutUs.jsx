@@ -33,7 +33,6 @@ class LandingPage extends React.Component {
             <Services />
             <Specials />
             <OpenHrs />
-            <hr></hr>
             <SocialMedia />
           </div>
         </div>

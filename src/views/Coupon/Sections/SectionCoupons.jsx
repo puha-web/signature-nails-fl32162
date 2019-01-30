@@ -10,9 +10,9 @@ import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-import ManiSpecial from "assets/img/salon/mani3-special.jpg";
-import PediSpecial from "assets/img/salon/pedi2-special.jpg";
-
+//Data
+import coupons from '../../../db/Coupon';
+import notification from '../../../db/Notification';
 
 import sectionPillsStyle from "assets/jss/material-kit-pro-react/views/blogPostsSections/sectionPillsStyle.jsx";
 
@@ -29,56 +29,58 @@ function SectionPills({ ...props }) {
             classes.textCenter
             }`}
         >
-          <h2 className={classes.titleSpecial}>No Valid Coupon Now!</h2>
-          <h2 className={classes.titleSpecial}>Please visit us again for future coupons!</h2>
-
-
+          <div className={classes.titleSpecial}>
+            {notification.coupon}
+          </div>
         </GridItem>
-        <GridItem xs={12} sm={6} md={6}>
-          <Card
-            raised
-            background
-            style={{ backgroundImage: "url(" + ManiSpecial + ")" }}
-          >
-            <CardBody background>
-              <a href="#pablo">
-                <h3 className={classes.cardTitle}>
-                  15% Off in November
-                </h3>
-              </a>
-              <p className={classes.category}>
-                Visit us get your manicure service for 15% Off this spring break. Can't wait to see you!
-              </p>
-              <p className={classes.category}>
-                Valid through 11/15/2018
-              </p>
-              <Button
-                round
-                color="success"
-                size="sm"
-                href="tel:3213104761"
-                rel="noopener noreferrer"
-                className={classes.pullRight}
-              >
-                <i className="fas fa-phone fa-rotate-90" />CAll US
-                </Button>
-              <Button
-                round
-                color="success"
-                size="sm"
-                href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.pullRight}
+        {coupons.map(coupon => (
+          <GridItem xs={12} sm={6} md={6}>
+            <Card
+              raised
+              background
+              style={{ backgroundImage: "url(" + coupon.bgImg + ")" }}
+            >
+              <CardBody background>
+                <a href="#pablo">
+                  <h3 className={classes.cardTitle}>
+                    {coupon.title}
+                  </h3>
+                </a>
+                <p className={classes.category}>
+                  {coupon.description}
+                </p>
+                <p className={classes.category}>
+                  {coupon.validThrough}
+                </p>
+                <Button
+                  round
+                  color="default"
+                  size="sm"
+                  href="tel:3213104761"
+                  rel="noopener noreferrer"
+                  className={classes.pullRight}
+                >
+                  <i className="fas fa-phone fa-rotate-90" />CAll US
+       </Button>
+                <Button
+                  round
+                  color="default"
+                  size="sm"
+                  href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.pullRight}
 
-              >
-                <i className="fas fa-directions" />Directions
-                </Button>
+                >
+                  <i className="fas fa-directions" />Directions
+       </Button>
 
-            </CardBody>
-          </Card>
-        </GridItem>
-        <GridItem xs={12} sm={6} md={6}>
+              </CardBody>
+            </Card>
+          </GridItem>
+        ))}
+
+        {/* <GridItem xs={12} sm={6} md={6}>
           <Card
             raised
             background
@@ -121,7 +123,7 @@ function SectionPills({ ...props }) {
 
             </CardBody>
           </Card>
-        </GridItem>
+        </GridItem> */}
         {/* 
         <GridItem
           xs={12}

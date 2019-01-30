@@ -12,9 +12,8 @@ import Spotlight from "../Components/Spotlight.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 // Sections for this page
-import Specials from "./Sections/SectionSpecials.jsx";
+import Coupons from "./Sections/SectionCoupons.jsx";
 import SocialMedia from "../Components/SocialMedia.jsx";
-
 
 
 // const dashboardRoutes = [];
@@ -32,7 +31,7 @@ class Coupon extends React.Component {
         {/* <Header /> */}
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <Specials />
+            <Coupons />
             <SocialMedia />
           </div>
         </div>
