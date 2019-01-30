@@ -29,9 +29,9 @@ function SectionPills({ ...props }) {
             classes.textCenter
             }`}
         >
-          <div className={classes.titleSpecial}>
+          <h2 className={classes.titleSpecial}>
             {notification.coupon}
-          </div>
+          </h2>
         </GridItem>
         {coupons.map(coupon => (
           <GridItem xs={12} sm={6} md={6}>
