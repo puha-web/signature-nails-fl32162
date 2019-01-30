@@ -14,12 +14,12 @@ import Spotlight from "../Components/Spotlight.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
 // Sections for this page
-import Specials from "./Sections/SectionSpecials.jsx";
+import Specials from "./Sections/SectionPhotos.jsx";
 import SocialMedia from "../Components/SocialMedia.jsx";
 
 class Gallery extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 50);
     document.body.scrollTop = 0;
   }
   render() {
@@ -30,7 +30,6 @@ class Gallery extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <Specials />
-            <hr></hr>
             <SocialMedia />
           </div>
         </div>

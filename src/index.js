@@ -7,7 +7,7 @@ import Header from './views/Components/Header.jsx';
 import Footer from './views/Components/Footer.jsx';
 
 
-import LandingPage from "views/LandingPage/LandingPage.jsx";
+import AboutUs from "views/LandingPage/AboutUs.jsx";
 import LocationPage from "views/LocationPage/LocationPage.jsx";
 import Coupon from "views/Coupon/Coupon.jsx";
 import GiftCard from "views/GiftCard/GiftCard.jsx";
@@ -21,12 +21,12 @@ import "assets/scss/material-kit-pro-react.css?v=1.2.0";
 var hist = createBrowserHistory();
 
 ReactDOM.render(
-  <Router history={hist}>
+  <Router history={hist} basename={process.env.PUBLIC_URL}>
   <div>
     <Header />
     <Switch>
-      <Route exact path='/' component={LandingPage} />
-      <Route exact path='/about-us' component={LandingPage} />
+      <Route exact path='/'  component={AboutUs} />
+      <Route exact path='/about-us' component={AboutUs} />
       <Route exact path='/location' component={LocationPage} />
       <Route exact path='/coupon' component={Coupon} />
       <Route exact path='/gift-card' component={GiftCard} />

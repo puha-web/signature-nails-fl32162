@@ -13,22 +13,27 @@ import Spotlight from "../Components/Spotlight.jsx";
 
 
 // sections for this page
-import ServiceList from "./Sections/ServiceList";
+import ServiceList from "./Sections/ServiceList1";
 
 import blogPostsPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 import SocialMedia from "../Components/SocialMedia.jsx";
 
 class Services extends React.Component {
+  
   componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 100;
+    window.scrollTo(0, 5);
+    document.body.scrollTop = 0;
+
+    // const serviceDiv = document.getElementById('serviceDiv');
+    // serviceDiv.scrollIntoView(true);
+
   }
   render() {
     const { classes } = this.props;
     return (
       <div>
         <Spotlight />
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised)} id='serviceDiv'>
           <div className={classes.container}>
             <ServiceList />
             <SocialMedia />

@@ -14,7 +14,7 @@ import Spotlight from "../Components/Spotlight.jsx";
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/landingPageStyle.jsx";
 
 // Sections for this page
-import Specials from "./Sections/SectionSpecials.jsx";
+import Specials from "./Sections/SectionPromotion";
 import SocialMedia from "../Components/SocialMedia.jsx";
 
 
@@ -34,7 +34,6 @@ class Promotion extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <Specials />
-            <hr></hr>
             <SocialMedia />
           </div>
         </div>

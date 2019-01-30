@@ -20,16 +20,23 @@ import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
+// page style
 import contactsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle.jsx";
 
+//Images
 import SalonLocation from "assets/img/salon/bg-location.JPEG";
 
-
+//Data
+import aboutData from '../../../db/AboutUs';
 
 class SectionContacts extends React.Component {
 
   render() {
     const { classes, ...rest } = this.props;
+    
+    const phoneNum = 'tel:' + aboutData.phone;
+    console.log(phoneNum)
+
     return (
       <div className="cd-section" {...rest}  style={{ marginBottom: '50px'}}>
         {/* Contact us 1 START */}
@@ -53,10 +60,10 @@ class SectionContacts extends React.Component {
                       <GridItem xs={12} sm={12} md={12}>
                         <InfoArea
                           className={classes.infoArea2}
-                          title="Monday - Saturday"
+                          title={aboutData.busHrs.opening.dates}
                           description={
                             <h5>
-                              <strong>9:00am - 06:00pm</strong>
+                              <strong>{aboutData.busHrs.opening.time}</strong>
                             </h5>
                           }
                           icon={OpenHrs}
@@ -66,7 +73,7 @@ class SectionContacts extends React.Component {
                       <GridItem xs={12} sm={12} md={12}>
                         <InfoArea
                           className={classes.infoArea2}
-                          title="Sunday"
+                          title={aboutData.busHrs.closed.dates}
                           description={
                             <h5>
                               <strong>Closed</strong>
@@ -100,7 +107,6 @@ class SectionContacts extends React.Component {
                 </Card>
               </GridItem>
               <GridItem xs={12} sm={5} md={5}>
-                {/* <h2 className={classes.title}>Get in Touch</h2> */}
                 <InfoArea
                   className={classes.infoArea}
                   title="Our Location"
@@ -117,12 +123,11 @@ class SectionContacts extends React.Component {
                         round
                         color="success"
                         size="sm"
-                        href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
+                        href={aboutData.addressLink}
                         target="_blank"
-                        rel="noopener noreferrer"
-                        // className={classes.pullRight}
+                        rel={aboutData.addressLink}
                       >
-                        Directions
+                        Get Directions
                     </Button>
                     </div>
                   }
@@ -138,7 +143,7 @@ class SectionContacts extends React.Component {
                       <strong>
                         <span>
                           Phone Number
-                        <br /> (352) 259-2400
+                        <br /> {aboutData.phone}
                       </span>
                       </strong>
                       <br></br>
@@ -146,7 +151,7 @@ class SectionContacts extends React.Component {
                         round
                         color="success"
                         size="sm"
-                        href="tel:3213104761"
+                        href={phoneNum}
                         rel="noopener noreferrer"
                       >
                         Call Now</Button>
