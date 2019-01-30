@@ -11,7 +11,7 @@ import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-import PediSpecial from "assets/img/salon/pedi2-special.jpg";
+// import PediSpecial from "assets/img/salon/pedi2-special.jpg";
 
 //Data
 import promo from '../../../db/Promotion';
@@ -41,7 +41,7 @@ function SectionPills({ ...props }) {
             <Card
               raised
               background
-              style={{ backgroundImage: "url(" + PediSpecial + ")" }}
+              style={{ backgroundImage: "url(" + promoInfo.bgImg + ")" }}
             >
               <CardBody background>
                 <a href="#pablo">
