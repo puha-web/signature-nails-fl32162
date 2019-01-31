@@ -31,7 +31,7 @@ class Media extends React.Component {
               Google
             </Button>
             <Button round color="facebook" style={{ width: '150px'}}
-              href="https://www.facebook.com/pages/Signature-Nails/157494284291095"
+              href="https://www.facebook.com/LCN-Nail-Spa-1583160825231938/"
               target="_blank"
             >
               <i
@@ -40,7 +40,7 @@ class Media extends React.Component {
               FaceBook
             </Button>
             <Button round style={{backgroundColor: '#FCF3CF', color: 'black', width: '150px'}}
-              href="https://www.yelp.com/biz/signature-nails-lady-lake"
+              href="https://www.yelp.com/biz/lcn-nail-spa-raleigh"
               target="_blank"
             >
               <i

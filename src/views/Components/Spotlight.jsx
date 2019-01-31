@@ -11,6 +11,7 @@ import Button from "components/CustomButtons/Button.jsx";
 
 //Data
 import aboutData from '../../db/AboutUs';
+import elementStyle from '../../db/ElementStyles';
 
 // page style
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
@@ -38,7 +39,7 @@ class Spotlight extends React.Component {
               <br />
               <Button
                 round
-                color="success"
+                color={elementStyle.btnColor}
                 size="sm"
                 href={phoneNum}
                 rel="noopener noreferrer"
@@ -47,7 +48,7 @@ class Spotlight extends React.Component {
             </Button>
               <Button
                 round
-                color="success"
+                color={elementStyle.btnColor}
                 size="sm"
                 href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
                 target="_blank"

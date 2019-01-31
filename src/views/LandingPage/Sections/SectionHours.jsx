@@ -23,11 +23,9 @@ import Button from "components/CustomButtons/Button.jsx";
 // page style
 import contactsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/contactsStyle.jsx";
 
-//Images
-import SalonLocation from "assets/img/salon/bg-location.JPEG";
-
 //Data
 import aboutData from '../../../db/AboutUs';
+import elementStyle from '../../../db/ElementStyles';
 
 class SectionContacts extends React.Component {
 
@@ -42,7 +40,7 @@ class SectionContacts extends React.Component {
         {/* Contact us 1 START */}
         <div
           className={`${classes.contacts} ${classes.section}`}
-          style={{ backgroundImage: `url(${SalonLocation})` }}
+          style={{ backgroundImage: `url(${aboutData.salonPhoto})` }}
         >
           <div className={classes.container}>
             <GridContainer>
@@ -50,7 +48,7 @@ class SectionContacts extends React.Component {
                 <Card className={classes.card1}>
                   <CardHeader
                     contact
-                    color="success"
+                    color={elementStyle.btnColor}
                     className={classes.textCenter}
                   >
                     <h4 className={classes.cardTitle}>Business Hours</h4>
@@ -58,45 +56,36 @@ class SectionContacts extends React.Component {
                   <CardBody>
                     <GridContainer>
                       <GridItem xs={12} sm={12} md={12}>
-                        <InfoArea
+                        {aboutData.busHrs.map(busHr => (
+                          <InfoArea
                           className={classes.infoArea2}
-                          title={aboutData.busHrs.opening.dates}
-                          description={
-                            <h5>
-                              <strong>{aboutData.busHrs.opening.time}</strong>
-                            </h5>
+                          title={
+                            <span>
+                              {busHr.dates} <br />
+                              {busHr.time}
+                            </span>
                           }
-                          icon={OpenHrs}
-                          iconColor="success"
+
+                          icon={busHr.time === "Closed" ? ClosedHrs : OpenHrs }
+                          iconColor={elementStyle.iconColor}
                         />
+                        ))}
+                        
                       </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
                         <InfoArea
                           className={classes.infoArea2}
-                          title={aboutData.busHrs.closed.dates}
-                          description={
-                            <h5>
-                              <strong>Closed</strong>
-                            </h5>
-                          }
-                          icon={ClosedHrs}
-                          iconColor="success"
-                        />
-                      </GridItem>
-                      <GridItem xs={12} sm={12} md={12}>
-                        <InfoArea
-                          className={classes.infoArea2}
-                          title="Walks-In Welcome"
+                          title={<h4>Walks-In Welcome</h4>}
                           icon={WalkIn}
-                          iconColor="success"
+                          iconColor={elementStyle.iconColor}
                         />
                       </GridItem>
                       <GridItem xs={12} sm={12} md={12}>
                         <InfoArea
                           className={classes.infoArea2}
-                          title="We Accept Credit Cards"
+                          title={<h4>We Accept Credit Cards</h4>}
                           icon={CreditCard}
-                          iconColor="success"
+                          iconColor={elementStyle.iconColor}
                         />
                       </GridItem>
                     </GridContainer>
@@ -114,14 +103,14 @@ class SectionContacts extends React.Component {
                     <div>
                       <strong>
                         <span>
-                          1078 Lake Sumter Landing,
-                            <br /> The Villages, Fl 32162
+                          {aboutData.address.street},
+                            <br /> {aboutData.address.city}, {aboutData.address.state}. {aboutData.address.zipCode}
                           </span>
                       </strong>
                       <br></br>
                       <Button
                         round
-                        color="success"
+                        color={elementStyle.btnColor}
                         size="sm"
                         href={aboutData.addressLink}
                         target="_blank"
@@ -149,7 +138,7 @@ class SectionContacts extends React.Component {
                       <br></br>
                       <Button
                         round
-                        color="success"
+                        color={elementStyle.btnColor}
                         size="sm"
                         href={phoneNum}
                         rel="noopener noreferrer"
@@ -165,8 +154,6 @@ class SectionContacts extends React.Component {
             </GridContainer>
           </div>
         </div>
-        {/* Contact us 1 END */}
-
       </div>
     );
   }

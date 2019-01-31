@@ -48,16 +48,16 @@ class Services extends React.Component {
               alignCenter
               tabs={[
                 {
-                  tabButton: "Manicures",
-                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Manicures'/>
+                  tabButton: "Nails Enhancements",
+                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Nails Enhancements'/>
                 },
                 {
-                  tabButton: "Pedicures",
-                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Pedicures'/>
+                  tabButton: "Natural Nails Hand Treatment",
+                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Natural Nails Hand Treatment'/>
                 },
                 {
-                  tabButton: "Combo Specials",
-                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Combo Specials'/>
+                  tabButton: "Luxurious Pedicures",
+                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Luxurious Pedicures'/>
                 },
                 {
                   tabButton: "Waxing",
