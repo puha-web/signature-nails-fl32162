@@ -40,13 +40,29 @@ const AboutUs = {
       img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special2.png',
       description: 'Refreshing Hand Treatment service followed by collagen mask. ' + 
                     'aging property that absorb into the skin, help the skin nourish and be smooth.  (Collagent Vitamin E)'
-      },
-      { 
-        name: 'Grand LCN Manicure',
-        img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special3.png',
-        description: 'Incorporated Warm Basalt Stone massage with Signature Hand Treatment for total relaxation.  ' + 
-                      'Extra shoulder and arm massage for 10 minutes. ' 
-        }
+    },
+    { 
+      name: 'Grand LCN Manicure',
+      img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special3.png',
+      description: 'Incorporated Warm Basalt Stone massage with Signature Hand Treatment for total relaxation.  ' + 
+                    'Extra shoulder and arm massage for 10 minutes. ' 
+    },
+    {
+      name: "LCN’s Signature Foot Treatment",
+      img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special1.png',
+      description: 'It includes foot exfoliation, nail shaping, cuticle care, callus reduction, and a salt scrub. Foot mask and steamed towel wraps, application of oil, massage w/ hot stone and desired polish'
+    },
+    { 
+      name: "LCN’s Grand Foot Treatment",
+      img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special2.png',
+      description: "Your feet will be very soft once wrapped in a collagen mask, they are placed in warm mittens. The heat from the mittens helps the anti-aging property of the collagen absorb into the skin"
+    },
+    { 
+      name: 'Grand LCN Manicure',
+      img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special3.png',
+      description: 'Incorporated Warm Basalt Stone massage with Signature Hand Treatment for total relaxation.  ' + 
+                    'Extra shoulder and arm massage for 10 minutes. ' 
+    }
   ],
   busHrs: [
     { dates: 'Tuesday - Saturday', time: "9:30 am - 7:00 pm" },

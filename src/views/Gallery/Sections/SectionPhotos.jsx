@@ -30,11 +30,11 @@ function SectionProjects({ ...props }) {
                 }`}
             >
               <h2 className={classes.title}>
-                Our Gallery
+                Our Work
               </h2>
             </GridItem>
           </GridContainer>
-          <GridContainer>
+          <GridContainer justify='center'>
             {gallery.map(photo => (
               <GridItem xs={12} sm={4} md={4} className={classes.mlAuto} key={photo.id}>
                 <Card plain className={classes.card2}>

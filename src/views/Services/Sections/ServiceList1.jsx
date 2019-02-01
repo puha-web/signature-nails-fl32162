@@ -17,6 +17,7 @@ import ServiceInfo from './ServiceInfo1.jsx';
 
 //Data
 import services from '../../../db/Services';
+import elementStyle from '../../../db/ElementStyles';
 
 
 class Services extends React.Component {
@@ -44,7 +45,7 @@ class Services extends React.Component {
             <h2 style={{ fontWeight: 'bold' }}>Our Services</h2>
 
             <NavPills
-              headerColor='success'
+              headerColor= {elementStyle.serviceName}
               alignCenter
               tabs={[
                 {
@@ -65,6 +66,10 @@ class Services extends React.Component {
                 },
                 {
                   tabButton: "Kids' Services",
+                  tabContent: <ServiceInfo allServices={this.state.services} groupName="Kids' Services"/>
+                },
+                {
+                  tabButton: "Additional",
                   tabContent: <ServiceInfo allServices={this.state.services} groupName="Kids' Services"/>
                 },
               ]}

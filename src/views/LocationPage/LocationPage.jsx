@@ -16,7 +16,8 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
-import Email from "@material-ui/icons/Email";
+import OpenHrs from "@material-ui/icons/EventAvailable";
+import ClosedHrs from "@material-ui/icons/EventBusy";
 import WalkIn from "@material-ui/icons/TagFaces";
 import CreditCard from "@material-ui/icons/CreditCard";
 
@@ -32,11 +33,13 @@ import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsSty
 
 
 //Components
-import SalonPhoto from './ImageGallery.jsx';
+import SalonPhoto from './salonGallery';
 import ServiceBgImg from 'assets/img/salon/serviceBg-default.jpg';
 import SocialMedia from "../Components/SocialMedia.jsx";
 
-
+//Data
+import aboutData from '../../db/AboutUs';
+import elementStyle from '../../db/ElementStyles';
 
 const CustomSkinMap = withScriptjs(
   withGoogleMap(props => (
@@ -62,8 +65,10 @@ class Location extends React.Component {
   render() {
 
     const { classes } = this.props;
+    const phoneNum = 'tel:' + aboutData.phone;
 
-     return (
+
+    return (
       <div>
         {/* <Header /> */}
         <div className={classes.bigMap}>
@@ -95,71 +100,73 @@ class Location extends React.Component {
                       color="success"
                       className={classes.textCenter}
                     >
-                      <h4 className={classes.cardTitle}>Our Location</h4>
+                      <h4 className={classes.cardTitle}>Contact Us</h4>
                     </CardHeader>
                     <CardBody>
-                      <InfoArea
-                        className={classes.info}
-                        title="1078 Lake Sumter Landing, The Villages, FL 32162"
-                        description={
-                          <Button
-                            round
-                            color="success"
-                            size="sm"
-                            href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Directions
-                        </Button>
-                        }
-                        icon={PinDrop}
-                        iconColor="success"
-                      />
-                      <InfoArea
-                        className={classes.info}
-                        title="(352) 259-2400"
-                        description={
-                          <Button
-                            round
-                            color="success"
-                            size="sm"
-                            href="tel:3213104761"
-                            rel="noopener noreferrer"
-                          >
-                            CAll US
-                          </Button>
-                        }
-                        icon={Phone}
-                        iconColor="success"
-                      />
-                      <InfoArea
-                        className={classes.info}
-                        title="Signaturenails@gmail.com"
-                        icon={Email}
-                        iconColor="success"
-                      />
-                      <InfoArea
-                        className={classes.info}
-                        title="Walks-In Welcome"
-                        icon={WalkIn}
-                        iconColor="success"
-                      />
-                      <InfoArea
-                        className={classes.info}
-                        title="We Accept Credit Cards"
-                        icon={CreditCard}
-                        iconColor="success"
-                      />
+                      <GridContainer>
+                        <GridItem>
+                          <InfoArea
+                            className={classes.info}
+                            title={
+                              <div>
+                                <span>
+                                  {aboutData.address.street},
+                                  <br /> {aboutData.address.city}, {aboutData.address.state}. {aboutData.address.zipCode}
+                                </span>
+                              </div>
+                            }
+                            description={
+                              <Button
+                                round
+                                color={elementStyle.btnColor}
+                                size="sm"
+                                href={aboutData.addressLink}
+                                target="_blank"
+                                rel={aboutData.addressLink}
+                              >
+                                Get Directions
+                                  </Button>
+                            }
+                            icon={PinDrop}
+                            iconColor="success"
+                          />
+                          <InfoArea
+                            className={classes.info}
+                            title={aboutData.phone}
+                            description={
+                              <Button
+                                round
+                                color={elementStyle.btnColor}
+                                size="sm"
+                                href={phoneNum}
+                                rel="noopener noreferrer"
+                              >
+                                Call Now</Button>
+                            }
+                            icon={Phone}
+                            iconColor="success"
+                          />
+                          <InfoArea
+                            className={classes.info}
+                            title="Walks-In Welcome"
+                            icon={WalkIn}
+                            iconColor="success"
+                          />
+                          <InfoArea
+                            className={classes.info}
+                            title="We Accept Credit Cards"
+                            icon={CreditCard}
+                            iconColor="success"
+                          />
+                        </GridItem>
+                      </GridContainer>
                     </CardBody>
                   </Card>
                 </GridItem>
                 <GridItem md={7} sm={7} className={classes.mlAuto}>
                   <SalonPhoto />
                 </GridItem>
-                
               </GridContainer>
-              <hr></hr>
               <SocialMedia />
             </div>
           </div>

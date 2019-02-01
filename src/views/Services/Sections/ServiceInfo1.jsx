@@ -10,6 +10,7 @@ import { Card } from '@material-ui/core';
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
+import elementStyle from '../../../db/ElementStyles';
 
 import ServiceBgImg from 'assets/img/salon/serviceBg-default.jpg';
 
@@ -28,7 +29,7 @@ const serviceList = (props) => (
                 <ListItemText primary={
                   <div key={serviceInfo.id} style={{ borderBottomStyle: 'dashed', borderBottomWidth: '.5px' }}>
                     <h5 style={{ fontWeight: 'bold' }}>
-                      <span>{serviceInfo.service}</span>
+                      <span style={{color: `${elementStyle.serviceName}`}}>{serviceInfo.service}</span>
                       <span
                         style={{ float: 'right' }}
                       >{serviceInfo.price}</span>
