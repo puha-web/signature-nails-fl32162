@@ -11,13 +11,12 @@ import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
 import elementStyle from '../../../db/ElementStyles';
+import ServiceBgImg from 'assets/img/salon/serviceBg.jpg';
 
-import ServiceBgImg from 'assets/img/salon/serviceBg-default.jpg';
 
 const serviceList = (props) => (
 
   <Card style={{ backgroundImage: `url(${ServiceBgImg})` }}>
-
     <CardBody>
       <div>
         <h3 style={{ fontWeight: 'bold' }}
@@ -45,7 +44,6 @@ const serviceList = (props) => (
           )
         }
       </div>
-
     </CardBody>
     <CardFooter>
       <h5>

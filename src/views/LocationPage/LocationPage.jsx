@@ -97,7 +97,7 @@ class Location extends React.Component {
                   <Card style={{ backgroundImage: `url(${ServiceBgImg})` }}>
                     <CardHeader
                       contact
-                      color="success"
+                      color={elementStyle.btnColor}
                       className={classes.textCenter}
                     >
                       <h4 className={classes.cardTitle}>Contact Us</h4>
@@ -128,7 +128,7 @@ class Location extends React.Component {
                                   </Button>
                             }
                             icon={PinDrop}
-                            iconColor="success"
+                            iconColor={elementStyle.iconColor}
                           />
                           <InfoArea
                             className={classes.info}
@@ -144,19 +144,19 @@ class Location extends React.Component {
                                 Call Now</Button>
                             }
                             icon={Phone}
-                            iconColor="success"
+                            iconColor={elementStyle.iconColor}
                           />
                           <InfoArea
                             className={classes.info}
                             title="Walks-In Welcome"
                             icon={WalkIn}
-                            iconColor="success"
+                            iconColor={elementStyle.iconColor}
                           />
                           <InfoArea
                             className={classes.info}
                             title="We Accept Credit Cards"
                             icon={CreditCard}
-                            iconColor="success"
+                            iconColor={elementStyle.iconColor}
                           />
                         </GridItem>
                       </GridContainer>

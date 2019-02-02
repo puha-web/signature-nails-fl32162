@@ -10,6 +10,9 @@ import HeaderLinks from "components/Header/HeaderLinks.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsPageStyle.jsx";
 
+//data
+import aboutUs from '../../db/AboutUs';
+
 
 class PageHeader extends React.Component {
   render() {
@@ -19,15 +22,18 @@ class PageHeader extends React.Component {
       <Header
       color="transparent"
       brand={
-        <h4
-          style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
-        >Signature Nails</h4>
+        <a href='/'>
+          <img src={aboutUs.logo} style={{height: '50px', margin: 0, padding: 0}}></img>
+        </a>
+        // <h4
+        //   style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
+        // >{aboutUs.salonName}</h4>
       }
       links={<HeaderLinks dropdownHoverColor="info" />}
       fixed
       changeColorOnScroll={{
         height: 1,
-        color: "success"
+        color: "default"
       }}
       {...rest}
     />
