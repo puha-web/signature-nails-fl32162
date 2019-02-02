@@ -12,9 +12,11 @@ import Button from "components/CustomButtons/Button.jsx";
 
 //Data
 import aboutData from '../../../db/AboutUs';
+import ourSpecials from '../../../db/OurSpecials';
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 import teamStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/teamStyle.jsx";
+import { FormHelperText } from "@material-ui/core";
 
 const style = {
   ...teamsStyle,
@@ -30,21 +32,21 @@ class OurSpecial extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ specials: aboutData.ourSpecials })
+    this.setState({ specials: ourSpecials })
   }
 
   render() {
     const { classes } = this.props;
+
+    // const toggleHandler = () => {
+    //   let showDetail = document.getElementById();
+    //   showDetail.classList.toggle();
+    // }
+
     return (
       <div className={classes.section}>
         <GridContainer>
-          <GridItem
-            xs={12}
-            sm={8}
-            md={8}
-            className={`${classes.mlAuto} ${classes.mrAuto} ${
-              classes.textCenter
-              }`}
+          <GridItem xs={12} sm={8} md={8} className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
           >
             <h2 className={classes.title} style={{ marginBottom: 0 }}>Our Specials</h2>
           </GridItem>
@@ -56,14 +58,14 @@ class OurSpecial extends React.Component {
               <Card
                 raised
                 background
-                style={{ backgroundImage: "url(" + special.img + ")"}}
+                style={{
+                  backgroundImage: "url(" + special.img + ")",
+                }}
               >
                 <CardBody background>
-                  <a href="#pablo">
-                    <h3 className={classes.cardTitle}>
-                      {special.name}
-                    </h3>
-                  </a>
+                  <h3 className={classes.cardTitle}>
+                    {special.service}
+                  </h3>
                   <p className={classes.category}>
                     {special.description}
                   </p>

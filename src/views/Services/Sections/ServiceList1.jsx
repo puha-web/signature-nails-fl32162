@@ -45,7 +45,7 @@ class Services extends React.Component {
             <h2 style={{ fontWeight: 'bold' }}>Our Services</h2>
 
             <NavPills
-              headerColor= {elementStyle.serviceName}
+              color='warning'
               alignCenter
               tabs={[
                 {

@@ -112,7 +112,7 @@ function HeaderLinks({ ...props }) {
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={Apps}
+          // buttonIcon={}
           dropdownList={[
             <Link to="/location" className={classes.dropdownLink}>
               <LocationOn className={classes.dropdownIcons} /> Location
