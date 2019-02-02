@@ -19,15 +19,18 @@ import SocialMedia from "../Components/SocialMedia.jsx";
 
 class Gallery extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 50);
-    document.body.scrollTop = 0;
+    window.scrollTo(0, 300);
+    // document.body.scrollTop = 0;
+
+    // document.getElementById('gallery-div').scrollIntoView({ behavior: 'auto'})
+
   }
   render() {
     const { classes} = this.props;
     return (
       <div>
         <Spotlight />
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised)} id='gallery-div'>
           <div className={classes.container}>
             <Specials />
             <SocialMedia />

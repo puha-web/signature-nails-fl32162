@@ -115,17 +115,17 @@ function HeaderLinks({ ...props }) {
           // buttonIcon={}
           dropdownList={[
             <Link to="/location" className={classes.dropdownLink}>
-              <LocationOn className={classes.dropdownIcons} /> Location
+              <LocationOn className={classes.dropdownIcons} /> Contact
             </Link>,
-            <Link to="/promotion" className={classes.dropdownLink}>
-              <Promotion className={classes.dropdownIcons} /> Promotions
-            </Link>,
+            // <Link to="/promotion" className={classes.dropdownLink}>
+            //   <Promotion className={classes.dropdownIcons} /> Promotions
+            // </Link>,
             <Link to="/coupon" className={classes.dropdownLink}>
               <AttachMoney className={classes.dropdownIcons} /> Coupon
             </Link>,
-            <Link to="/gift-card" className={classes.dropdownLink}>
-            <GiftCard className={classes.dropdownIcons} /> Gift Card
-          </Link>,
+            // <Link to="/gift-card" className={classes.dropdownLink}>
+            //   <GiftCard className={classes.dropdownIcons} /> Gift Card
+            // </Link>,
 
             //   <Link to="/contact-us" className={classes.dropdownLink}>
             //     <Call className={classes.dropdownIcons} /> Contact Us

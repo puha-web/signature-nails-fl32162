@@ -8,7 +8,7 @@ import Footer from './views/Components/Footer.jsx';
 
 
 import AboutUs from "views/LandingPage/AboutUs.jsx";
-import LocationPage from "views/LocationPage/LocationPage.jsx";
+import Contact from "views/Contact/Contact.jsx";
 import Coupon from "views/Coupon/Coupon.jsx";
 import GiftCard from "views/GiftCard/GiftCard.jsx";
 import Promotion from "views/Promotion/Promotion.jsx";
@@ -27,7 +27,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path='/'  component={AboutUs} />
       <Route exact path='/about-us' component={AboutUs} />
-      <Route exact path='/location' component={LocationPage} />
+      <Route exact path='/location' component={Contact} />
       <Route exact path='/coupon' component={Coupon} />
       <Route exact path='/gift-card' component={GiftCard} />
       <Route exact path='/promotion' component={Promotion} />

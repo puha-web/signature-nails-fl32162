@@ -33,7 +33,7 @@ class PageHeader extends React.Component {
       fixed
       changeColorOnScroll={{
         height: 1,
-        color: "default"
+        color: "warning"
       }}
       {...rest}
     />

@@ -75,7 +75,7 @@ class WeOffer extends React.Component {
                           padding: '5px'
                         }}
                       >
-                        <strong>{service.name}</strong>
+                        <a href='/service'><strong>{service.name}</strong></a>
                       </h4>
                     </div>
                   </CardHeader>

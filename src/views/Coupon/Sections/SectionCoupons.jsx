@@ -34,7 +34,7 @@ function SectionPills({ ...props }) {
           </h2>
         </GridItem>
         {coupons.map(coupon => (
-          <GridItem xs={12} sm={6} md={6}>
+          <GridItem xs={12} sm={12} md={12}>
             <Card
               raised
               background

@@ -20,8 +20,8 @@ import SocialMedia from "../Components/SocialMedia.jsx";
 
 class Coupon extends React.Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
+    window.scrollTo(0, 300);
+    // document.body.scrollTop = 0;
   }
   render() {
     const { classes} = this.props;
