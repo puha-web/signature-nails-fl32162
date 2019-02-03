@@ -17,7 +17,7 @@ import ServiceInfo from './ServiceInfo1.jsx';
 
 //Data
 import services from '../../../db/Services';
-import elementStyle from '../../../db/ElementStyles';
+import styles from '../../../db/ElementStyles';
 
 
 class Services extends React.Component {
@@ -45,20 +45,20 @@ class Services extends React.Component {
             <h2 style={{ fontWeight: 'bold' }}>Our Services</h2>
 
             <NavPills
-              color='warning'
+              color={styles.serGroupColor}
               alignCenter
               tabs={[
                 {
-                  tabButton: "Nails Enhancements",
-                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Nails Enhancements'/>
+                  tabButton: "Manicures",
+                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Manicures'/>
                 },
                 {
-                  tabButton: "Natural Nails Hand Treatment",
-                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Natural Nails Hand Treatment'/>
+                  tabButton: "Pedicures",
+                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Pedicures'/>
                 },
                 {
-                  tabButton: "Luxurious Pedicures",
-                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Luxurious Pedicures'/>
+                  tabButton: "Combo Specials",
+                  tabContent: <ServiceInfo allServices={this.state.services} groupName='Combo Specials'/>
                 },
                 {
                   tabButton: "Waxing",
@@ -66,10 +66,6 @@ class Services extends React.Component {
                 },
                 {
                   tabButton: "Kids' Services",
-                  tabContent: <ServiceInfo allServices={this.state.services} groupName="Kids' Services"/>
-                },
-                {
-                  tabButton: "Additional",
                   tabContent: <ServiceInfo allServices={this.state.services} groupName="Kids' Services"/>
                 },
               ]}

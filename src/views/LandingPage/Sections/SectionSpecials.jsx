@@ -16,7 +16,6 @@ import ourSpecials from '../../../db/OurSpecials';
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";
 import teamStyle from "assets/jss/material-kit-pro-react/views/landingPageSections/teamStyle.jsx";
-import { FormHelperText } from "@material-ui/core";
 
 const style = {
   ...teamsStyle,
@@ -38,11 +37,6 @@ class OurSpecial extends React.Component {
   render() {
     const { classes } = this.props;
 
-    // const toggleHandler = () => {
-    //   let showDetail = document.getElementById();
-    //   showDetail.classList.toggle();
-    // }
-
     return (
       <div className={classes.section}>
         <GridContainer>
@@ -54,7 +48,7 @@ class OurSpecial extends React.Component {
 
         <GridContainer style={{ marginBottom: 0 }}>
           {this.state.specials.map(special => (
-            <GridItem xs={12} sm={4} md={4}>
+            <GridItem xs={12} sm={6} md={6}>
               <Card
                 raised
                 background

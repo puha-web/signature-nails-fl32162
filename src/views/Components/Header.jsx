@@ -24,12 +24,9 @@ class PageHeader extends React.Component {
       <Header
       color="transparent"
       brand={
-        <a href='/'>
-          <img src={Logo} style={{height: '50px', margin: 0, padding: 0}}></img>
-        </a>
-        // <h4
-        //   style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
-        // >{aboutUs.salonName}</h4>
+        <h4
+          style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
+        >{aboutUs.salonName}</h4>
       }
       links={<HeaderLinks dropdownHoverColor="info" />}
       fixed
