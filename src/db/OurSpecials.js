@@ -22,19 +22,19 @@ const ourSpecials = [
   {
     service: "LCN’s Signature Foot Treatment",
     group: "pedicure",
-    img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special1.png',
+    img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special4.jpg',
     description: "An Enjoying 45 Minute Pedicure. A hydrating foot treatment . It includes foot exfoliation, nail shaping, cuticle care, callus reduction, and a salt scrub. Foot mask and steamed towel wraps or (paraffin wrap), application of oil (or lotion), massage w/ hot stone and desired polish. "
   },
   { 
     service: "LCN’s Grand Foot Treatment",
     group: "pedicure",
-    img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special2.png',
+    img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special5.jpg',
     description: "An Enjoying 45 Minute Pedicure. (Collagen vitamin E) Pedicure. Revive those sore and worn out feet with a relaxing collagen foot treatment. This starts with a warm foot soak. Followed by cuticle care, callus reduction, milk and honey sea salt to exfoliate your skin. Your feet will be very soft once wrapped in a collagen mask, they are placed in warm mittens. The heat from the mittens helps the anti-aging property of the collagen absorb into the skin. An additional hot stone massage, warm towel, lotion and polish."
   },
   { 
     service: 'Grand LCN Manicure',
     group: "pedicure",
-    img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special3.png',
+    img: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/ourSpecials/special6.jpg',
     description: "An Enjoying 60 Minute Pedicure. Rejuvenate the feet with the extreme LCN pedicure treatment. It will naturally moisturize, exfoliate and intensive callus treatment. Fresh slices of orange and lemon are added to the soak followed by a gentle application of our milk and honey sea salt. Must mask butter, (or green tea mint) steamed towel wraps, hot stone massage and necklace relax leave feet feeling soft, smooth, refreshed included with paraffin wrap and desired polish."
   }
 ]

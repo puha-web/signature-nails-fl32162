@@ -35,7 +35,7 @@ import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsSty
 
 //Components
 import SalonPhoto from './salonGallery.jsx';
-import ServiceBgImg from 'assets/img/salon/serviceBg-default.jpg';
+import ServiceBgImg from 'assets/img/salon/serviceBg.jpg';
 import SocialMedia from "../Components/SocialMedia.jsx";
 
 //Data
