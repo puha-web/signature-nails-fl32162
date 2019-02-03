@@ -1,15 +1,17 @@
-#  Web App Template
+# LCN Nail Spa Website
 
 ## Overview
 
-* Description: Salon Website template for salon business owner
+* Description: Basic Website for salon
 
 ## Customer Information
 
-### Salon Name: 
+### Salon Name: LCN Nails Spa
 
-* Location: 
-* Phone: 
+* Location: 12341 Strickland Rd, Ste 106,
+Raleigh, NC. 27613
+* Phone: (984) 202 - 5188
 
-* Customer: 
-* Contact Number: 
+* Customer: Ms. Tu
+* Contact Number: (908) 462-4369
+* Charge: 150 yearly
