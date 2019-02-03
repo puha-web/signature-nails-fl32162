@@ -39,7 +39,7 @@ const AboutUs = {
     state: 'NC',
     zipCode: '27613'
   },
-  addressLink: 'https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632',
+  addressLink: 'https://www.google.com/maps/dir//lcn+nail+spa+raleigh+nc/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89acf9d4b5e8080f:0x2ef50e3bb0a76f03?ved=2ahUKEwizjtS1xJ7gAhURGt8KHbLXD5UQ9RcwC3oECAYQEA',
   phone: '(984) 202-5188',
   email: '',
   salonPhoto: 'https://s3.amazonaws.com/lcn-nail-spa-nc27613/images/gallery/salonPhoto/gallery-160625.jpg'

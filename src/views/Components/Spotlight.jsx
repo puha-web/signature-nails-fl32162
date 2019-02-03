@@ -50,7 +50,7 @@ class Spotlight extends React.Component {
                 round
                 color={elementStyle.btnColor}
                 size="sm"
-                href="https://www.google.com/maps/place/Signature+Nails/@28.9083275,-81.9716632,15z/data=!4m5!3m4!1s0x0:0xb2bcce2499f299cb!8m2!3d28.9083275!4d-81.9716632"
+                href={aboutData.addressLink}
                 target="_blank"
                 rel="noopener noreferrer"
 
