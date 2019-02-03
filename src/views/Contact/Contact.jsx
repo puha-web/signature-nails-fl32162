@@ -34,7 +34,7 @@ import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsSty
 
 
 //Components
-import SalonPhoto from './salonGallery';
+import SalonPhoto from './salonGallery.jsx';
 import ServiceBgImg from 'assets/img/salon/serviceBg-default.jpg';
 import SocialMedia from "../Components/SocialMedia.jsx";
 
@@ -52,7 +52,7 @@ const CustomSkinMap = withScriptjs(
         zoomControl: true,
       }}
     >
-      <Marker position={{ lat: 28.9085061, lng: -81.9717989 }} label={'Signature Nails'} />
+      <Marker position={{ lat: 28.9085061, lng: -81.9717989 }} label={aboutData.salonName} />
 
     </GoogleMap>
   ))

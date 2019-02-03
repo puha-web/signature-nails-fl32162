@@ -12,6 +12,8 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsP
 
 //data
 import aboutUs from '../../db/AboutUs';
+import Logo from '../../assets/img/salon/logo/logo.png';
+import Style from '../../db/ElementStyles.js';
 
 
 class PageHeader extends React.Component {
@@ -23,7 +25,7 @@ class PageHeader extends React.Component {
       color="transparent"
       brand={
         <a href='/'>
-          <img src={aboutUs.logo} style={{height: '50px', margin: 0, padding: 0}}></img>
+          <img src={Logo} style={{height: '50px', margin: 0, padding: 0}}></img>
         </a>
         // <h4
         //   style={{ fontFamily: "'Coiny', cursive", fontSize: '25px', padding: 0, margin: 0 }}
@@ -33,7 +35,7 @@ class PageHeader extends React.Component {
       fixed
       changeColorOnScroll={{
         height: 1,
-        color: "warning"
+        color: Style.headerBackground
       }}
       {...rest}
     />
