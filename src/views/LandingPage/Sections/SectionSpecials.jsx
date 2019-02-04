@@ -11,7 +11,6 @@ import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 //Data
-import aboutData from '../../../db/AboutUs';
 import ourSpecials from '../../../db/OurSpecials';
 
 import teamsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/teamsStyle.jsx";

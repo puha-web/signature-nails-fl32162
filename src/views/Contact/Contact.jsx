@@ -17,8 +17,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import PinDrop from "@material-ui/icons/PinDrop";
 import Phone from "@material-ui/icons/Phone";
-import OpenHrs from "@material-ui/icons/EventAvailable";
-import ClosedHrs from "@material-ui/icons/EventBusy";
 import WalkIn from "@material-ui/icons/TagFaces";
 import CreditCard from "@material-ui/icons/CreditCard";
 

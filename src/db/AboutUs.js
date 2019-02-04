@@ -1,4 +1,3 @@
-import React from 'react';
 
 const AboutUs = {
   salonName: 'Signature Nails',
@@ -12,19 +11,19 @@ const AboutUs = {
   weOffer: [
     {
       name: 'Manicures',
-      img: 'https://s3.amazonaws.com/puha-web-images/Manicures/mani1.jpg'
+      img: 'https://s3.amazonaws.com/signature-nails-fl32162/images/weOffer/mani4.png'
     },
     {
       name: 'Pedicures',
-      img: 'https://s3.amazonaws.com/puha-web-images/Pedicures/pedi1.jpg'
+      img: 'https://s3.amazonaws.com/signature-nails-fl32162/images/weOffer/pedi9.png'
     },
     {
       name: 'Waxing',
-      img: 'https://s3.amazonaws.com/puha-web-images/Waxing/waxing1.jpg'
+      img: 'https://s3.amazonaws.com/signature-nails-fl32162/images/weOffer/waxing2.jpg'
     },
     {
       name: "Kids' Services",
-      img: 'https://s3.amazonaws.com/puha-web-images/Manicures/nailArt1.jpg'
+      img: 'https://s3.amazonaws.com/signature-nails-fl32162/images/weOffer/nailArt1.png'
     }
   ],
   busHrs: [

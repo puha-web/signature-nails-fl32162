@@ -22,8 +22,7 @@ class Media extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center" >
           <GridItem xs={12} sm={8} md={8} style={{ marginBottom: '50px' }} >
-            <h4 className={classes.title}>Thank you for visiting us!</h4>
-
+            <h4 className={classes.title}>Follow Us</h4>
             <Button round color="google" style={{ width: '150px'}}
               href={SocialLinks.google} 
               target="_blank"
@@ -40,7 +39,7 @@ class Media extends React.Component {
               <i
                 className={"fab fa-facebook"}
               />{" "}
-              FaceBook
+              Facebook
             </Button>
             <Button round style={{backgroundColor: '#FCF3CF', color: 'black', width: '150px'}}
               href={SocialLinks.yelp}
@@ -51,6 +50,8 @@ class Media extends React.Component {
               />{" "}
               yelp
             </Button>
+            <h4 className={classes.title}>Thank You For Visting Us! </h4>
+
           </GridItem>
         </GridContainer>
       </div >

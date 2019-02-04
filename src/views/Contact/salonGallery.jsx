@@ -41,12 +41,6 @@ class SectionCarousel extends React.Component {
                       // alt="First slide"
                       className="slick-image"
                     />
-                    {/* <div className="slick-caption">
-                        <h4>
-                          <LocationOn className="slick-icons" />Yellowstone
-                          National Park, United States
-                      </h4>
-                      </div> */}
                   </div>
                 ))}
 

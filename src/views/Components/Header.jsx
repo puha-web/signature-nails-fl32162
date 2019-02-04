@@ -12,7 +12,6 @@ import landingPageStyle from "assets/jss/material-kit-pro-react/views/blogPostsP
 
 //data
 import aboutUs from '../../db/AboutUs';
-import Logo from '../../assets/img/salon/logo/logo.png';
 import Style from '../../db/ElementStyles.js';
 
 
