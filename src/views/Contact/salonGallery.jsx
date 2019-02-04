@@ -29,7 +29,7 @@ class SectionCarousel extends React.Component {
     return (
         <GridContainer justify='center'>
           <GridItem xs={12} sm={10} md={10} className={classes.marginAuto} style={{ textAlign: 'center', marginTop: '25px' }}>
-            <h4 className={Card.title}><strong>Welcome to Our Salon!</strong></h4>
+            <h3 className={Card.title}><strong>Welcome to Our Salon!</strong></h3>
             <Card>
 
               <Carousel {...settings}>

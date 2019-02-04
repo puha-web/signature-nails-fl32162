@@ -51,7 +51,7 @@ class SectionContacts extends React.Component {
                     color={elementStyle.btnColor}
                     className={classes.textCenter}
                   >
-                    <h4 className={classes.cardTitle}>Business Hours</h4>
+                    <h3 className={classes.cardTitle}>We Open</h3>
                   </CardHeader>
                   <CardBody>
                     <GridContainer>
