@@ -50,7 +50,7 @@ class Media extends React.Component {
               />{" "}
               yelp
             </Button>
-            <h4 className={classes.title}>Thank You For Visting Us! </h4>
+            <h4 className={classes.title}>Thank You For Visting! </h4>
 
           </GridItem>
         </GridContainer>
